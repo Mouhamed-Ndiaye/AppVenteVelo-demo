@@ -1,4 +1,4 @@
 # AppVenteVelo-demo
-Explorez notre univers cycliste sur la plateforme de vente de vélos ultime.
-
-Une plateforme de vente de vélos réalisée avec Jakarta EE version 1.0.
+Plateforme de vente de vélos composée
+d'un service web développé à l’aide de JAX-RS et documenté avec OpenAPI (Swagger) et une interface web JSF créée en utilisant Jakarta Faces
+avec l’implémentation de base PrimeFaces.
