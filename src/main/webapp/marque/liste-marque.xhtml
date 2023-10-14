@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: MOUHAMED NDIAYE
+  Date: 27/08/2023
+  Time: 14:31
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Liste des marques</title></h:head>
+
+<h:body>
+    <h:form>
+        <p:growl id="successMessages" showDetail="true" autoUpdate="true"/>
+        <p:menubar style="margin-top: -7px; padding-left: 100px;">
+
+            <p:submenu label="Articles Commande" icon="pi pi-fw pi-book">
+                <p:menuitem action="/articleCommande/ajout-articleCommande.xhtml?faces-redirect=true"
+                            immediate="true"
+                            value="Ajouter" icon="pi pi-fw pi-plus"/>
+                <p:menuitem action="/articleCommande/modifier-articleCommande.xhtml?faces-redirect=true"
+                            immediate="true"
+                            value="Modifier" icon="pi pi-fw pi-pencil"/>
+                <p:menuitem action="/articleCommande/supprimer-articleCommande.xhtml?faces-redirect=true"
+                            immediate="true"
+                            value="Supprimer" icon="pi pi-fw pi-trash"/>
+                <p:menuitem action="/articleCommande/liste-articleCommande.xhtml?faces-redirect=true"
+                            immediate="true"
+                            value="Lister" icon="pi pi-fw pi-bars"/>
+            </p:submenu>
+
+            <p:submenu label="Catégories" icon="pi pi-fw pi-folder">
+                <p:menuitem action="/categorie/ajout-categorie.xhtml?faces-redirect=true" immediate="true"
+                            value="Ajouter" icon="pi pi-fw pi-plus"/>
+                <p:menuitem action="/categorie/modifier-categorie.xhtml?faces-redirect=true" immediate="true"
+                            value="Modifier" icon="pi pi-fw pi-pencil"/>
+                <p:menuitem action="/categorie/supprimer-categorie.xhtml?faces-redirect=true" immediate="true"
+                            value="Supprimer" icon="pi pi-fw pi-trash"/>
+                <p:menuitem action="/categorie/liste-categorie.xhtml?faces-redirect=true" immediate="true"
+                            value="Lister" icon="pi pi-fw pi-bars"/>
+            </p:submenu>
+
+            <p:submenu label="Clients" icon="pi pi-fw pi-user">
+                <p:menuitem action="/client/ajout-client.xhtml?faces-redirect=true" immediate="true"
+                            value="Ajouter" icon="pi pi-fw pi-plus"/>
+                <p:menuitem action="/client/modifier-client.xhtml?faces-redirect=true" immediate="true"
+                            value="Modifier" icon="pi pi-fw pi-pencil"/>
+                <p:menuitem action="/client/supprimer-client.xhtml?faces-redirect=true" immediate="true"
+                            value="Supprimer" icon="pi pi-fw pi-trash"/>
+                <p:menuitem action="/client/liste-client.xhtml?faces-redirect=true" immediate="true"
+                            value="Lister" icon="pi pi-fw pi-bars"/>
+            </p:submenu>
+
+            <p:submenu label="Commandes" icon="pi pi-fw pi-shopping-cart">
+                <p:menuitem action="/commande/ajout-commande.xhtml?faces-redirect=true" immediate="true"
+                            value="Ajouter" icon="pi pi-fw pi-plus"/>
+                <p:menuitem action="/commande/modifier-commande.xhtml?faces-redirect=true" immediate="true"
+                            value="Modifier" icon="pi pi-fw pi-pencil"/>
+                <p:menuitem action="/commande/supprimer-commande.xhtml?faces-redirect=true" immediate="true"
+                            value="Supprimer" icon="pi pi-fw pi-trash"/>
+                <p:menuitem action="/commande/liste-commande.xhtml?faces-redirect=true" immediate="true"
+                            value="Lister" icon="pi pi-fw pi-bars"/>
+            </p:submenu>
+
+            <p:submenu label="Employés" icon="pi pi-fw pi-briefcase">
+                <p:menuitem action="/employe/ajout-employe.xhtml?faces-redirect=true" immediate="true"
+                            value="Ajouter" icon="pi pi-fw pi-plus"/>
+                <p:menuitem action="/employe/modifier-employe.xhtml?faces-redirect=true" immediate="true"
+                            value="Modifier" icon="pi pi-fw pi-pencil"/>
+                <p:menuitem action="/employe/supprimer-employe.xhtml?faces-redirect=true" immediate="true"
+                            value="Supprimer" icon="pi pi-fw pi-trash"/>
+                <p:menuitem action="/employe/liste-employe.xhtml?faces-redirect=true" immediate="true"
+                            value="Lister" icon="pi pi-fw pi-bars"/>
+            </p:submenu>
+
+            <p:submenu label="Magasin" icon="pi pi-fw pi-shopping-cart">
+                <p:menuitem action="/magasin/ajout-magasin.xhtml?faces-redirect=true" immediate="true"
+                            value="Ajouter" icon="pi pi-fw pi-plus"/>
+                <p:menuitem action="/magasin/modifier-magasin.xhtml?faces-redirect=true" immediate="true"
+                            value="Modifier" icon="pi pi-fw pi-pencil"/>
+                <p:menuitem action="/magasin/supprimer-magasin.xhtml?faces-redirect=true" immediate="true"
+                            value="Supprimer" icon="pi pi-fw pi-trash"/>
+                <p:menuitem action="/magasin/liste-magasin.xhtml?faces-redirect=true" immediate="true"
+                            value="Lister" icon="pi pi-fw pi-bars"/>
+            </p:submenu>
+
+            <p:submenu label="Produit" icon="pi pi-fw pi-tag">
+                <p:menuitem action="/produit/ajout-produit.xhtml?faces-redirect=true" immediate="true"
+                            value="Ajouter" icon="pi pi-fw pi-plus"/>
+                <p:menuitem action="/produit/modifier-produit.xhtml?faces-redirect=true" immediate="true"
+                            value="Modifier" icon="pi pi-fw pi-pencil"/>
+                <p:menuitem action="/produit/supprimer-produit.xhtml?faces-redirect=true" immediate="true"
+                            value="Supprimer" icon="pi pi-fw pi-trash"/>
+                <p:menuitem action="/produit/liste-produit.xhtml?faces-redirect=true" immediate="true"
+                            value="Lister" icon="pi pi-fw pi-bars"/>
+                <p:menuitem action="/produit/rechercheAvancee.xhtml?faces-redirect=true" immediate="true"
+                            value="Rechercher" icon="pi pi-fw pi-search"/>
+            </p:submenu>
+
+            <p:submenu label="Stock" icon="pi pi-fw pi-box">
+                <p:menuitem action="/stock/ajout-stock.xhtml?faces-redirect=true" immediate="true"
+                            value="Ajouter" icon="pi pi-fw pi-plus"/>
+                <p:menuitem action="/stock/modifier-stock.xhtml?faces-redirect=true" immediate="true"
+                            value="Modifier" icon="pi pi-fw pi-pencil"/>
+                <p:menuitem action="/stock/supprimer-stock.xhtml?faces-redirect=true" immediate="true"
+                            value="Supprimer" icon="pi pi-fw pi-trash"/>
+                <p:menuitem action="/stock/liste-stock.xhtml?faces-redirect=true" immediate="true"
+                            value="Lister" icon="pi pi-fw pi-bars"/>
+            </p:submenu>
+
+        </p:menubar>
+
+        <p:dataView id="marque" value="#{listeMarquesBeans.marques}" rows="12" var="marque" paginator="true"
+                    rowsPerPageTemplate="6,12,16"
+                    paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                    gridIcon="pi pi-th-large" listIcon="pi pi-bars">
+            <f:facet name="header">
+                <div style="text-align: center">
+                    <h:outputText
+                            style="font-family: 'JetBrains Mono Thin', sans-serif; text-transform: uppercase; font-weight: bolder"
+                            value="Liste des marques"/><br/><br/>
+                </div>
+
+                <p:commandButton style="margin-left: 70px;"
+                                 action="/marque/ajout-marque.xhtml?faces-redirect=true" immediate="true"
+                                 icon="pi pi-plus" styleClass="rounded-button ui-button-outlined" title="Ajouter"/>
+                <p:commandButton style="margin-left: 100px;"
+                                 action="/marque/modifier-marque.xhtml?faces-redirect=true" immediate="true"
+                                 icon="pi pi-refresh" styleClass="rounded-button ui-button-warning ui-button-outlined"
+                                 title="Modifier"/>
+                <p:commandButton style="margin-left: 100px;"
+                                 action="/marque/supprimer-marque.xhtml?faces-redirect=true" immediate="true"
+                                 icon="pi pi-times" styleClass="rounded-button ui-button-danger ui-button-outlined"
+                                 title="Supprimer"/>
+
+            </f:facet>
+            <p:dataViewGridItem>
+                <div class="marque-grid-item card border-1">
+                    <div class="marque-grid-item-content">
+                        <div class="marque-name"><span
+                                style="font-weight: bold; font-family: 'JetBrains Mono Thin', sans-serif">ID:</span> #{marque.id}
+                        </div>
+                        <div class="marque-description"><span
+                                style="font-weight: bold; font-family: 'JetBrains Mono Thin', sans-serif">Nom de la marque:</span> #{marque.nom}
+                        </div>
+                    </div>
+                </div>
+            </p:dataViewGridItem>
+
+            <p:dataViewListItem>
+                <div class="product-list-item">
+                    <div class="product-list-detail">
+                        <div class="product-name"><span
+                                style="font-weight: bold; font-family: 'JetBrains Mono Thin', sans-serif">ID:</span> #{marque.id}
+                        </div>
+                        <div class="product-description"><span
+                                style="font-weight: bold; font-family: 'JetBrains Mono Thin', sans-serif">Nom de la marque:</span> #{marque.nom}
+                        </div>
+                    </div>
+                </div>
+            </p:dataViewListItem>
+
+        </p:dataView>
+    </h:form>
+</h:body>
+
+</html>
