@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/articleCommande/liste-articleCommande.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/articleCommande" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/categorie/ajout-categorie.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/categorie" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/categorie/liste-categorie.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/categorie" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/categorie/modifier-categorie.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/categorie" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/categorie/supprimer-categorie.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/categorie" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/commande/ajout-commande.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/commande" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/employe/ajout-employe.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/employe" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/employe/modifier-employe.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/employe" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/employe/supprimer-employe.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/employe" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/marque/ajout-marque.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/marque" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/marque/modifier-marque.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/marque" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/produit/liste-produit.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/produit" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/produit/modifier-produit.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/produit" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/produit/rechercheAvancee.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/produit" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/stock/supprimer-stock.xhtml" value="file://$PROJECT_DIR$/src/main/webapp/stock" />
+      </map>
+    </option>
+  </component>
+</project>
